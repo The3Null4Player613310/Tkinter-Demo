@@ -14,7 +14,7 @@ class Test(tk.Frame):
         self.master.geometry("900x650+0+0")
 
     def create_widgets(self):
-        print("wigits go herer")
+        print("widgets go here")
 
 
 root = tk.Tk()
