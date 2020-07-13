@@ -14,7 +14,29 @@ class Test(tk.Frame):
         self.master.geometry("900x650+0+0")
 
     def create_widgets(self):
-        print("widgets go here")
+        print("making widgets")
+
+        # label code below
+
+        text = tk.Label(self, text="FooBar")
+        text.pack()
+
+        # button code below
+
+        button = tk.Button(self, text='Foo', command=None)
+        button.pack()
+
+        # checkbox code below
+
+        foobar = tk.StringVar()
+
+        label = tk.Label(self, textvariable=foobar)
+        label.pack()
+
+        checkfoo = tk.Checkbutton(self, variable=foobar, onvalue='foo', offvalue='')
+        checkfoo.pack()
+        checkbar = tk.Checkbutton(self, variable=foobar, onvalue='bar', offvalue='')
+        checkbar.pack()
 
 
 root = tk.Tk()
